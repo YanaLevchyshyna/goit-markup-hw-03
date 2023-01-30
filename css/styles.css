@@ -1,0 +1,200 @@
+:root {
+  --primary-text-color: #434455;
+  --primary-headings-color: #2e2f42;
+  --accent-color: #e7e9fc;
+  --nav-link-color: #2e2f42;
+  --nav-active-link-color: #404bbf;
+  --primary-contact-color: #434455;
+  --bcg-btn-color: #f4f4fd;
+  --bcg-active-btn-color: #404bbf;
+  --text-btn-color: #4d5ae5;
+  --text-active-btn-color: #ffffff;
+  --hero-title-color: #ffffff;
+  --hero-bcg-color: #2e2f42;
+  --bcg-hero-btn-color: #4d5ae5;
+  --bcg-hero-hover-btn-color: #404bbf;
+  --hero-text-button-color: #ffffff;
+  --portfolio-main-text-btn-color: #4d5ae5;
+  --portfolio-hover-text-btn-color: #ffffff;
+  --portfolio-main-bcg-btn-color: #f4f4fd;
+  --portfolio-hover-bcg-btn-color: #404bbf;
+  --portfolio-border-btn-color: #e7e9fc;
+  --footer-text-color: #e7e9fc;
+  --footer-bcg-color: #2e2f42;
+  --logo-web-color: #4d5ae5;
+  --logo-studio-color: #2e2f42;
+  --logo-footer-studio-color: #f4f4fd;
+  --team-seaction-bcg-color: #f4f4fd;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--primary-text-color);
+}
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+/* -----------------SECTIONS---general properties--------------- */
+
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--primary-headings-color);
+}
+
+.section-subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--primary-headings-color);
+}
+.section-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+/* -----------LOGO--------------------- 
+*/
+.logo {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--logo-web-color);
+}
+
+.logo-studio {
+  color: var(--logo-studio-color);
+}
+.footer-logo {
+  color: var(--logo-footer-studio-color);
+}
+/*----------------SITE NAV------------------ */
+.site-nav .link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  color: var(--nav-link-color);
+}
+.site-nav .link:is(:hover, :focus),
+.contacts-list .link:is(:hover, :focus) {
+  color: var(--nav-active-link-color);
+}
+.site-nav .link.current {
+  color: var(--nav-active-link-color);
+}
+
+/* ----------------CONTACTS------------------ */
+.address {
+  font-style: normal;
+}
+.contacts-list .link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--primary-contact-color);
+}
+
+/* -----------------HERO---------------- */
+.hero-section {
+  background-color: var(--hero-bcg-color);
+}
+
+.hero-title {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--hero-title-color);
+}
+
+.hero-btn {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--hero-text-button-color);
+  background-color: var(--bcg-hero-btn-color);
+  cursor: pointer;
+}
+.hero-btn:is(:hover, :focus) {
+  background-color: var(--bcg-hero-hover-btn-color);
+}
+
+/* -----------------FEATURES------------------ 
+.fetures {
+} */
+
+.feature-title {
+  color: var(--primary-headings-color);
+}
+.title-secret {
+  visibility: hidden;
+}
+
+/* ---------------What are we doing---------- */
+
+/* ---------------TEAM--------------------*/
+
+.team-section {
+  background-color: var(--team-seaction-bcg-color);
+}
+
+/* ---------------CSS for PORTFOLIO--------------- */
+
+.button {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.04em;
+
+  color: var(--portfolio-main-text-btn-color);
+  background-color: var(--portfolio-main-bcg-btn-color);
+  cursor: pointer;
+}
+
+.button:is(:hover, :focus) {
+  color: var(--portfolio-hover-text-btn-color);
+  background-color: var(--portfolio-hover-bcg-btn-color);
+}
+
+/* -------------FOOTER---------------- */
+.footer-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--footer-text-color);
+}
+.footer-section {
+  background-color: var(--footer-bcg-color);
+}
