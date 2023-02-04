@@ -186,7 +186,7 @@ img {
 /* -----------------HERO---------------- */
 .hero-section {
   background-color: var(--hero-bcg-color);
-  height: 600px;
+  /* height: 600px; */
   padding-top: 188px;
   padding-bottom: 188px;
   margin-bottom: 120px;
@@ -317,13 +317,14 @@ img {
   display: flex;
   gap: 24px;
   justify-content: center;
-  margin-top: 96px;
+  /* margin-top: 96px; */
   margin-bottom: 72px;
 }
 
 .cards {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 120px;
 }
 .cards-item {
   padding-bottom: 32px;
