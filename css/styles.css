@@ -186,7 +186,6 @@ img {
 /* -----------------HERO---------------- */
 .hero-section {
   background-color: var(--hero-bcg-color);
-  /* height: 600px; */
   padding-top: 188px;
   padding-bottom: 188px;
   margin-bottom: 120px;
