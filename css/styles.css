@@ -285,6 +285,9 @@ img {
 }
 
 /* ---------------CSS for PORTFOLIO--------------- */
+.container-portfolio {
+  margin-bottom: 120px;
+}
 
 .header-portfolio {
   margin-bottom: 96px;
@@ -323,7 +326,6 @@ img {
 .cards {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 120px;
 }
 .cards-item {
   padding-bottom: 32px;
