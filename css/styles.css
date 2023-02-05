@@ -69,6 +69,20 @@ img {
   margin: 0 auto;
 }
 
+.title-secret {
+  visibility: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  overflow: hidden;
+}
+
 /* -----------------SECTIONS---general properties--------------- */
 
 .section-title {
@@ -176,8 +190,12 @@ img {
   color: var(--primary-contact-color);
 }
 
-.link-email {
+.link-contacts {
   margin-right: 40px;
+}
+
+.link-contacts:last-child {
+  margin-right: 0;
 }
 /* -----------------HERO---------------- */
 .hero-section {
@@ -237,10 +255,6 @@ img {
 
 .fetures-list .item:nth-last-child(-n + 1) {
   margin-right: 0;
-}
-
-.title-secret {
-  visibility: hidden;
 }
 
 /* ---------------ABOUT---------- */
@@ -305,10 +319,17 @@ img {
 
 .list-button {
   display: flex;
-  gap: 24px;
   margin-bottom: 72px;
   margin-top: 96px;
   justify-content: center;
+}
+
+.buttons {
+  margin-right: 24px;
+}
+
+.list-button .buttons:last-child {
+  margin-right: 0;
 }
 
 .cards {
@@ -342,7 +363,6 @@ img {
 
 /* -------------FOOTER---------------- */
 .footer-text {
-  width: 264px;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -369,4 +389,8 @@ img {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+}
+
+.first-footer-container {
+  width: 264px;
 }
