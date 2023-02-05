@@ -49,7 +49,9 @@ ul {
 }
 
 img {
-  margin-bottom: 32px;
+  display: block;
+  min-width: 100%;
+  height: auto;
 }
 
 .list {
@@ -99,8 +101,6 @@ img {
 */
 .logo {
   display: block;
-  padding-top: 20px;
-  padding-bottom: 20px;
   margin-right: 75px;
   font-family: 'Raleway';
   font-style: normal;
@@ -143,8 +143,6 @@ img {
 }
 .site-nav .link {
   display: block;
-  padding-top: 20px;
-  padding-bottom: 20px;
   color: var(--nav-link-color);
   font-weight: 500;
   font-size: 16px;
@@ -171,8 +169,6 @@ img {
 
 .contacts-list .link {
   display: block;
-  padding-top: 20px;
-  padding-bottom: 20px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -188,7 +184,6 @@ img {
   background-color: var(--hero-bcg-color);
   padding-top: 188px;
   padding-bottom: 188px;
-  margin-bottom: 120px;
   text-align: center;
 }
 
@@ -227,22 +222,23 @@ img {
 /* -----------------FEATURES------------------ */
 
 .fetures {
+  margin-top: 120px;
   margin-bottom: 120px;
 }
 
 .fetures-list {
   display: flex;
-  gap: 24px;
 }
 
 .fetures-list .item {
-  width: 265px;
+  margin-right: 24px;
+  /* width: 265px; */
 }
 
-.feature-title {
-  color: var(--primary-headings-color);
-  padding-bottom: 8px;
+.fetures-list .item:nth-last-child(-n + 1) {
+  margin-right: 0;
 }
+
 .title-secret {
   visibility: hidden;
 }
@@ -258,9 +254,6 @@ img {
   gap: 24px;
 }
 
-.item-about > img {
-  margin-bottom: 0;
-}
 /* ---------------TEAM--------------------*/
 
 .team-section {
@@ -275,7 +268,6 @@ img {
 }
 
 .team-list .team-item {
-  padding-bottom: 32px;
   background: var(--header-bcg-color);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -284,11 +276,10 @@ img {
   text-align: center;
 }
 
-/* ---------------CSS for PORTFOLIO--------------- */
-
-.header-portfolio {
-  margin-bottom: 96px;
+.team-subcontainer {
+  padding: 32px 16px;
 }
+/* ---------------CSS for PORTFOLIO--------------- */
 
 .portfolio-btn {
   padding: 12px 24px;
@@ -315,9 +306,9 @@ img {
 .list-button {
   display: flex;
   gap: 24px;
-  justify-content: center;
-  /* margin-top: 96px; */
   margin-bottom: 72px;
+  margin-top: 96px;
+  justify-content: center;
 }
 
 .cards {
@@ -326,7 +317,6 @@ img {
   margin-bottom: 120px;
 }
 .cards-item {
-  padding-bottom: 32px;
   margin-right: 24px;
   margin-bottom: 48px;
   box-sizing: border-box;
@@ -346,9 +336,8 @@ img {
   margin-bottom: 0;
 }
 
-.cards-title,
-.cards-text {
-  padding-left: 16px;
+.cards-subcontainer {
+  padding: 32px 0 32px 16px;
 }
 
 /* -------------FOOTER---------------- */
@@ -370,7 +359,14 @@ img {
 }
 
 .footer-logo {
+  display: block;
   margin-bottom: 16px;
-  padding-bottom: 0;
-  padding-top: 0;
+  color: var(--logo-web-color);
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }

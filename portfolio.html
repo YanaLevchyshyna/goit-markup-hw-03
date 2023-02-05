@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header class="header header-portfolio">
+    <header class="header">
       <div class="container header-container">
         <nav class="header-nav">
           <!--logotype-->
@@ -44,8 +44,8 @@
         <!--contacts-->
         <address class="address">
           <ul class="list contacts-list">
-            <li>
-              <a href="mailto:info@devstudio.com" class="link link-email"
+            <li class="link-email">
+              <a href="mailto:info@devstudio.com" class="link"
                 >info@devstudio.com</a
               >
             </li>
@@ -92,10 +92,12 @@
                 height="300"
                 alt="photo of an interface of a bank program"
               />
-              <h3 class="section-subtitle cards-title">
-                Banking App Interface Concept
-              </h3>
-              <p class="section-text cards-text">App</p>
+              <div class="cards-subcontainer">
+                <h3 class="section-subtitle cards-title">
+                  Banking App Interface Concept
+                </h3>
+                <p class="section-text cards-text">App</p>
+              </div>
             </li>
             <li class="cards-item">
               <img
@@ -104,8 +106,10 @@
                 height="300"
                 alt="mobile phone scans an QR-code"
               />
-              <h3 class="section-subtitle cards-title">Cashless Payment</h3>
-              <p class="section-text cards-text">Marketing</p>
+              <div class="cards-subcontainer">
+                <h3 class="section-subtitle cards-title">Cashless Payment</h3>
+                <p class="section-text cards-text">Marketing</p>
+              </div>
             </li>
             <li class="cards-item">
               <img
@@ -114,8 +118,10 @@
                 height="300"
                 alt="how the same application opens on a computer and a mobile phone"
               />
-              <h3 class="section-subtitle cards-title">Meditaion App</h3>
-              <p class="section-text cards-text">App</p>
+              <div class="cards-subcontainer">
+                <h3 class="section-subtitle cards-title">Meditaion App</h3>
+                <p class="section-text cards-text">App</p>
+              </div>
             </li>
             <li class="cards-item">
               <img
@@ -124,8 +130,10 @@
                 height="300"
                 alt="person behind the wheel looks at the route on the phone"
               />
-              <h3 class="section-subtitle cards-title">Taxi Service</h3>
-              <p class="section-text cards-text">Marketing</p>
+              <div class="cards-subcontainer">
+                <h3 class="section-subtitle cards-title">Taxi Service</h3>
+                <p class="section-text cards-text">Marketing</p>
+              </div>
             </li>
             <li class="cards-item">
               <img
@@ -134,8 +142,12 @@
                 height="300"
                 alt="screen illustrations"
               />
-              <h3 class="section-subtitle cards-title">Screen Illustrations</h3>
-              <p class="section-text cards-text">Design</p>
+              <div class="cards-subcontainer">
+                <h3 class="section-subtitle cards-title">
+                  Screen Illustrations
+                </h3>
+                <p class="section-text cards-text">Design</p>
+              </div>
             </li>
             <li class="cards-item">
               <img
@@ -144,8 +156,10 @@
                 height="300"
                 alt="girl in headphones holds a phone"
               />
-              <h3 class="section-subtitle cards-title">Online Courses</h3>
-              <p class="section-text cards-text">Marketing</p>
+              <div class="cards-subcontainer">
+                <h3 class="section-subtitle cards-title">Online Courses</h3>
+                <p class="section-text cards-text">Marketing</p>
+              </div>
             </li>
             <li class="cards-item">
               <img
@@ -154,10 +168,12 @@
                 height="300"
                 alt="Instagram stories design"
               />
-              <h3 class="section-subtitle cards-title">
-                Instagram Stories Concept
-              </h3>
-              <p class="section-text cards-text">Design</p>
+              <div class="cards-subcontainer">
+                <h3 class="section-subtitle cards-title">
+                  Instagram Stories Concept
+                </h3>
+                <p class="section-text cards-text">Design</p>
+              </div>
             </li>
             <li class="cards-item">
               <img
@@ -166,8 +182,10 @@
                 height="300"
                 alt="woman carries a bag with vegetables"
               />
-              <h3 class="section-subtitle cards-title">Organic Food</h3>
-              <p class="section-text cards-text">Web Site</p>
+              <div class="cards-subcontainer">
+                <h3 class="section-subtitle cards-title">Organic Food</h3>
+                <p class="section-text cards-text">Web Site</p>
+              </div>
             </li>
             <li class="cards-item">
               <img
@@ -176,8 +194,10 @@
                 height="300"
                 alt="barista prepares coffee"
               />
-              <h3 class="section-subtitle cards-title">Fresh Coffee</h3>
-              <p class="section-text cards-text">Web Site</p>
+              <div class="cards-subcontainer">
+                <h3 class="section-subtitle cards-title">Fresh Coffee</h3>
+                <p class="section-text cards-text">Web Site</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -186,7 +206,7 @@
     <!--footer-->
     <footer class="footer-section">
       <div class="container">
-        <a href="./index.html" class="logo link footer-logo"
+        <a href="./index.html" class="link footer-logo"
           >Web<span class="footer-span">Studio</span></a
         >
         <p class="footer-text">
